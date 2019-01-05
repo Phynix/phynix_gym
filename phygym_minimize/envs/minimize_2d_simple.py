@@ -65,7 +65,7 @@ class Minimize1DSimple(gym.Env):
 
     def __init__(self, reward='true_minimum', step_callbacks=None, param_low=-2, param_high=2, max_steps=100,
                  done_func='combined',
-                 nll_tolerance=0.001, param_l2_tolerance=0.00001, sum_grad_tolerance=0.001,
+                 nll_tolerance=0.01, param_l2_tolerance=0.0001, sum_grad_tolerance=0.001,
                  grad_clip_low=-3, grad_clip_high=3, sample_param_limit_factor=0.95,
                  n_sample=10000,
                  plot_contour=True, plot_grad=True, plot_position=True, gridsize_axis_contour=30,
@@ -152,7 +152,7 @@ class Minimize1DSimple(gym.Env):
         params_grads = []
         for param, grad in zip(self.params, self.gradients):
             params_grads.append(param)
-        params_grads.append(grad)
+            params_grads.append(grad)
         clipped_nll = tf.clip_by_value(self.nll, nll_low, nll_high)
         self.observations = [clipped_nll] + params_grads
         self.param_loss_l2 = tf.losses.mean_squared_error(labels=self.sample_params,

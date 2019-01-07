@@ -12,7 +12,6 @@ setup(name='phynix_gym',
           'Natural Language :: English',
           "License :: OSI Approved :: Apache Software License",
           'Programming Language :: Python :: 3.6',
-          "Programming Language:: Python:: 3:: Only",
           "Topic :: Scientific/Engineering :: Artificial Intelligence"
           ],
       python_requires=">=3",

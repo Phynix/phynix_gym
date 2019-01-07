@@ -8,7 +8,7 @@ setup(name='phynix_gym',
       install_requires=['gym', 'numpy', 'tensorflow'],
       classifiers=[
           "Development Status :: 2 - Pre-Alpha",
-          'Intended Audience python :: Science/Research',
+          'Intended Audience :: Science/Research',
           'Natural Language :: English',
           "License :: OSI Approved :: Apache Software License",
           'Programming Language :: Python :: 3.6',

@@ -1,6 +1,6 @@
 from gym.envs.registration import register
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 __author__ = "Jonas Eschle 'Mayou36'"
 __email__ = "jonas.eschle@cern.ch"
 

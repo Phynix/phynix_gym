@@ -1,6 +1,7 @@
 from setuptools import setup
 
 setup(name='phynix_gym',
+      url="https://github.com/Phynix/phynix_gym",
       author="Jonas Eschle 'Mayou36'",
       author_email="jonas.eschle@cern.ch",
       version='0.0.1',
@@ -13,7 +14,6 @@ setup(name='phynix_gym',
           'Programming Language :: Python :: 3.6',
           "Programming Language:: Python:: 3:: Only",
           "Topic :: Scientific/Engineering :: Artificial Intelligence"
-
           ],
       python_requires=">=3",
       include_package_data=True,

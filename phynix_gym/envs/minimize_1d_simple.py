@@ -236,7 +236,7 @@ class Minimize1DSimple(gym.Env):
                                                           predictions=self.params)
         self.sum_grads = tf.reduce_sum(tf.abs(self.gradients))
 
-    def step(self, action: List[float, float]) -> Tuple[List[float, ...], float, bool, dict]:
+    def step(self, action: List[float]) -> Tuple[List[float], float, bool, dict]:
         """Set new parameters [mu, sigma]
 
         Args:

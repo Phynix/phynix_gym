@@ -4,7 +4,7 @@ setup(name='phynix_gym',
       url="https://github.com/Phynix/phynix_gym",
       author="Jonas Eschle 'Mayou36'",
       author_email="jonas.eschle@cern.ch",
-      version='0.0.1',
+      version='0.0.2',
       install_requires=['gym', 'numpy', 'tensorflow'],
       classifiers=[
           "Development Status :: 2 - Pre-Alpha",

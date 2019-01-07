@@ -1,0 +1,21 @@
+os:
+  - linux
+language: python
+python:
+  - '3.6'
+install:
+  - pip install .
+script:
+  - echo "succesful"
+deploy:
+  - provider: pypi
+    user: phynix
+    password:
+      secure: JPNEGaY1V0YrD5gywsljEOtwMxEl422VKkgs/lvcg1fEXC3dZWaH0v3ymYi+YDGJjqWs0bwm3gyyFqDD96M2SVhayCVq0i7iSneIdxVagIEE7QvpxUyH/UH44zh6p42PmThy4Cun/hoMOfiNh7rY6H8NbjfL9qztdfWxMBVmSWqpc/456bHG53mAm3VuvePNI7SPp/gg84BoJfW2rnIA9NK0X6/gxxpSewA9N0yuGYN4mI3W3hNZNHbgohuKESiZrXo0xRl1X/THHAC3QHXjIGZmkk3Akx52DwLPK4gZDF6jOfyx94qoeJguV7yAcXZrVLKc+jp9YVQjXx9D/4uzLkHjY29CnN0a6M/5sQ/6TcVZ/zmSstFt7x9Z8dj+WFGFoM4iHySI/dDoSi6yHswN2qjGv/ldahm8RPLC6LOMfmsiCBl/t3qWRSH91njLQP6aC3jAB/OoHlMxUTaDW9A2WsusdpkIyf5C4gNTXiLLjaZXJnGcLAc1fV+mRaHl7mCNiBfVIueDL0C+HgU8JtEysnTCXZpeXDNNXcL7rhzk78ReKFMmXgo5RHuT4qr5wccwhqJC3GlYc5skksOOl0CIZdrndGtZ47k7dh+I0bkOXwcZVON+2+HAO/O+/z8hlS/jkmA1wY5JWh5veq538V6FVuvLgTDs/jXmkpw2591PfX4=
+    distributions: sdist bdist_wheel
+    on:
+      branch: master
+      tags: true
+      python: 3.6
+
+

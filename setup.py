@@ -5,7 +5,7 @@ setup(name='phynix_gym',
       author="Jonas Eschle 'Mayou36'",
       author_email="jonas.eschle@cern.ch",
       version='0.0.3',
-      install_requires=['gym', 'numpy', 'tensorflow'],
+      install_requires=['gym', 'numpy', 'tensorflow', 'matplotlib'],
       classifiers=[
           "Development Status :: 2 - Pre-Alpha",
           'Intended Audience :: Science/Research',
